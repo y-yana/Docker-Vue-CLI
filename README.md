@@ -1,16 +1,22 @@
 # docker-vue-cli
+Docker + Vue CLI の構成で開発する際の土台
 
-## Project setup
+### Docker起動
 ```
-npm install
+docker compose up --build
 ```
 
-### Compiles and hot-reloads for development
+### Dockerのコンテナに入る
+```
+docker exec -it vue-cli /bin/bash
+```
+
+### local server 起動
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### build
 ```
 npm run build
 ```
